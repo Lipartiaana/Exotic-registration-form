@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #3a5a40;
+  font-family: "Sarabun", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: fit-content;
+  min-height: 80vh;
+  margin: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-container,
+.form-container {
+  width: 50%;
+  height: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: right;
+  font-family: "Concert One", sans-serif;
+}
+
+.form-container,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+.form-bg {
+  display: none;
+}
+
+#register {
+  display: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #588157;
+  font-family: "Concert One", sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+button {
+  background-color: #3a5a40;
+  margin: 1.5rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+button:hover {
+  background-color: #a3b18a;
+}
+
+input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 60%;
+  height: 2.5rem;
+  border: 2px solid #588157;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  box-shadow: 0px 0px 5px 7px rgba(84, 164, 70, 0.5);
+}
+
+input:focus {
+  outline: none;
+  background-color: #a3b18a;
+}
+
+h3 {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+a {
+  color: #3a5a40;
+  font-weight: 900;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #588157;
+}
+
+.other-method,
+.other-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-method {
+  justify-content: space-evenly;
+  width: 220px;
+  border: 1px solid #588157;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.other-method:hover {
+  background-color: #a3b18a;
+}
+
+.icon {
+  width: 1.5rem;
+  margin-right: 1rem;
+}

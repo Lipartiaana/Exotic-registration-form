@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="image-container">
+        <img src="./jungle.jpg" alt="jungle" />
+        <h1>
+          Find your next <br />
+          adventure...
+        </h1>
+      </div>
+      <div class="form-container">
+        <img class="form-bg" src="./jungle.jpg" alt="jungle" />
+        <div class="form-content">
+          <form id="login" action="#">
+            <h2>
+              Hi, good to have <br />
+              you back.
+            </h2>
+            <input type="text" placeholder="Email" required />
+            <input
+              type="password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+            <button type="submit">LOGIN</button>
+            <p>
+              Don't have account?
+              <a id="to-register" class="changer">Register</a>
+            </p>
+          </form>
+          <form id="register" action="#">
+            <h2>Welcome!</h2>
+            <input type="text" placeholder="Email" required />
+            <input
+              id="reg-password"
+              type="text"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+            <input
+              id="reg-confirm"
+              type="text"
+              placeholder="Confirm password"
+              required
+            />
+            <span id="confirmPasswordError" class="error"></span>
+            <button id="register-btn" type="submit">REGISTER</button>
+            <p>
+              Already have account? <a id="to-login" class="changer">Login</a>
+            </p>
+          </form>
+          <hr />
+          <h3>OR</h3>
+          <div class="other-methods">
+            <div class="other-method">
+              <img class="icon" src="./google.png" alt="google" />
+              <p>Sign up with <strong>Google</strong></p>
+            </div>
+            <div class="other-method">
+              <img class="icon" src="./facebook.png" alt="Facebook" />
+              <p>Sign up with <strong>Facebook</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
